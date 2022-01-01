@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <!-- Head -->
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="./Utilities/basicSite.css">
+      <title>Protfolio.CLS</title>
+    </head>
+
+    <!-- Body -->
+    <body class="Background">   
+
+        <!-- Navbar -->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <!-- New section added -->
+            <a href="#Slideshow">Slideshow</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Work">My Work</a>
+            <!-- Onclick and ondblclick functions added to open and close the contact form -->
+            <a onclick="openForm()" ondblclick="closeForm()">Contact</a>
+        </div>
+
+        <!-- Background video -->
+        <div id="Home">
+            <video autoplay muted loop id="Typing_Video">
+                <source src="" type="video/mp4">
+                <!-- Display message if video fails to run -->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!-- Video text -->
+        <div class="Video_Text">
+            <h1 class="white-text">Conner Shelton's Portfolio</h1> <br><br>
+            <strong>
+                <p class="center">
+                    <q>The computer programmer is a creator of universes for which he alone is the lawgiver.
+                        <br>No playwright, no stage director, no emperor, however powerful, has ever exercised such absolute authority to arrange a stage or
+                        <br>field of battle and to command such unswervingly dutiful actors or troops.
+                    </q>
+                    <br> -Joseph Weizenbaum<br>
+                    <br>
+                    My name is Conner Shelton. Welcome to my portfolio website. On it, I will tell you about my background and experience.
+                    <br>
+                    <br>Thank you for stopping by and enjoy! 
+                </p>
+            </strong>
+        </div>
+
+        <!-- Slideshow section added -->
+        <div id="Slideshow">
+            <div id="Slideshow_Background"> 
+                <div id="Slideshow_Container">
+                    <!-- Slide 1 of 3 -->
+                    <div class="mySlides">
+                        <img class="Slideshow_Images" src="./Utilities/images/Coding_1.jpg" alt="">
+                        <div class="text">I'm available to assist you!</div>
+                    </div>
+                    <!-- Slide 2 of 3 -->
+                    <div class="mySlides">
+                        <img class="Slideshow_Images" src="./Utilities/images/HTML_CSS_and_JavaScript.jpeg" alt="HTML, CSS, and JS logos"> 
+                        <div class="text">I am a Front-end software developer,<br> trained in:<br>HTML, CSS, and JavaScript</div>
+                    </div>
+                    <!-- Slide 3 of 3 -->
+                    <div class="mySlides">
+                        <img class="Slideshow_Images" src="./Utilities/images/about_img.jpeg" alt="">
+                        <div class="text">Ready to dive into any project!</div>
+                    </div>
+                    
+                    <!-- Previous and next buttons -->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br> <!-- Adds a space between the slideshow images and the dots -->
+
+                <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- About section -->
+        <div class="Row" id="About">
+            <!-- Left column -->
+            <div class="Column_2 Column_tall">
+                <img src="./Utilities/images/my_img.jpg" alt="Replace with a picture of your choosing">
+            </div>
+            <!-- Right column -->
+            <div class="Column_1 Column_tall">
+                <h1>About</h1>
+                <p>
+                    I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Web Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript and more. 
+                    <br>
+                    <br>I am a Front-end developer and would love to work with you on your project. <a onclick="openForm()">Contact</a> me below!
+                    <br>
+                    <br>I hope i can eventually be a source of creative delight through game development, and as I get more experience I hope to do great things in any field! 
+                </p>
+            </div>
+        </div>
+
+        <!-- GitHub section -->
+        <div class="Row" id="GitHub">
+            <!-- Left column -->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>You can view my coding projects on my GitHub profile here:
+                    <br>
+                    <p class="center"><a href="https://github.com/ConnerShelton" target="_blank">My Personal Github</a></p>
+                </p>
+            </div>
+            <!-- Right column -->
+            <div class="Column_2">
+                <a href="https://github.com/the-tech-academy" target="_blank"><img src="./Utilities/images/github_img.jpg"></a>
+            </div>
+        </div>
+
+        <!--FINISHED WORKS-->
+
+        <div class="Row" id="Work">
+            <!--Left column-->
+
+            <div class="Column_2 Column_XTall">
+                <div class="card-group">
+                    <div class="card">
+                      <img class="card-img-top" src="./Utilities/OtherProjects/OPWHTML/thumb/image5.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">Custom One Page Website <br> (WIP)</h5>
+                        <p class="card-text">This is the first draft of a <br> One Page <br> Website <br> based off of <br> 
+                            <a href="https://www.learncodinganywhere.com">The Tech <br> Academy's </a> HTML <br> and CSS <br> Course.</p>
+                        <button type="button" class="btn btn-outline-secondary"><a href="./Utilities/OtherProjects/OPWHTML/OnePageWebsite.html">Go To!</a></button>
+                      </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="./OtherProjects/Img/Come_Soon.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">This Project Hasnt Begun</h5>
+                          <p class="card-text">This is a <br> project that <br> hasn't yet <br> begun!</p>
+                          <button type="button" class="btn btn-outline-secondary"><a href="">Go To!</a></button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="./OtherProjects/Img/Come_Soon.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">This Project Hasnt Begun</h5>
+                          <p class="card-text">This is a <br> project that <br> hasnt yet <br> begun!</p>
+                          <button type="button" class="btn btn-outline-secondary"><a href="">Go To!</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Right column-->
+            <div class="Column_1 Column_XTall">
+                <h1>My Work</h1>
+                <p class="center">
+                    These are the things ive completed working on up to this point. The programs listed are subject to change, so come back every once in a while. 
+                    You may also get into contact with me below should you have any feedback or complaints.
+                    <br>
+                    <p class="center"><a href="..." target="_blank">There is nothing else to link to just yet!</a></p>
+                </p>
+            </div>
+        </div>
+
+        <!-- Contact form -->
+        <div id="Contact">
+           <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+           <div class="form-popup" id="myForm">
+                <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
+                    <h1>Contact</h1>
+                    <label for="name"><b>Name</b></label>
+                      <input type="text" placeholder="Type your name here" name="name" required>
+                    <label for="phone"><b>Phone</b></label>
+                      <input type="text" placeholder="Type your phone number here" name="phone">
+                    <label for="email"><b>Email</b></label>		
+                      <input type="text" placeholder="Type your email address here" name="email" required>
+                    <label for="message"><b>Message</b></label>
+                      <input type="text" placeholder="Type your message here" name="message">
+         
+                    <button type="submit" class="btn">SUBMIT</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                </form>
+           </div>
+        </div>
+        
+        <!-- Footer section -->
+        <footer>
+                <p class="center">LaneProfessional&copy 2021, <a href="https://github.com/ConnerShelton" target="_blank">C.S's GitHub</a></p><br>
+        </footer>
+        
+        <script src="./Utilities/basicSite.js"></script>
+    </body>
+</html>
